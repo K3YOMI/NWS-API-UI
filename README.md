@@ -1,4 +1,4 @@
-# API Requester v1 - National Weather Service
+# NWS-API-UI (Panel) v1.0.0
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Inconsolata&duration=3000&color=D404F7&vCenter=true&height=25&lines=Have+questions%3F;Feel+free+to+DM+me+on+Discord!)](https://git.io/typing-svg)
 
 ## Contact Information 
