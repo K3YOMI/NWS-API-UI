@@ -45,7 +45,8 @@ This web panel is designed to retrieve information from the "api.weather.gov" AP
 
 
 ## 📷 Demo
-![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/b46c8622-8a78-488a-8d8f-fceca42ba78b)
-![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/2c5e3434-267d-496d-b45d-455991baa7df)
-![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/42187dfb-479e-4b3c-852e-f66976342a21)
+![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/7acf1f3a-905c-4a42-9215-819c7ae6e52e)
+![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/75491b84-4bf7-48b9-83bb-0f0d98f600c8)
+![image](https://github.com/K3YOMI/NWS-API-UI/assets/54733885/8f7c5607-1e9c-46c7-b6da-c53b0ef9ed06)
+
 
