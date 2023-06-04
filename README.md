@@ -18,7 +18,7 @@ This web panel is designed to retrieve information from the "api.weather.gov" AP
 
 
 ## 🆕 Active Alerts Information (FULL VIEW)
-| STATE | TOTAL WARNINGS/WATCHES | LAST ALERT | UPDATED |
+| STATE |  	TOTAL COUNTIES/AREAS AFFECTED | LAST ALERT | UPDATED |
 | ------| ------| ------| ------| 
 
 
