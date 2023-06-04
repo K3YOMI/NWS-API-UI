@@ -50,26 +50,31 @@
                                 </ul>
                             </div>
                         </nav>
-                        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">                       
+                        <main class="col-md-12 ml-sm-auto col-lg-10 px-md-4 py-4">                       
                             <h1 class="h2">Today's NOAA Outlook</h1>
                             <p class="card-text" id="last_updated">Last Updated: NaN</p>   
                             <div class="card">
                                 <h5 class="card-header">Latest Activated Message</h5>
                                 <div class="card-body">
-                                  <h5 class="card-title" id="latest_message">[Event Name] ([TYPE])</h5>
-                                  <p class="card-text text-success" id="latest_message_loco">County, ST</p>
+                                  <h5 class="card-title" id="latest_message">No Alert Found</h5>
+                                  <p class="card-text text-success" id="latest_message_loco">N/A</p>
                                 </div>
                             </div>
-                            <br>
-                            <div class="card">
-                                <h5 class="card-header">Day (1) Outlook</h5>
-                                <div class="card-body">
-                                  <img src="https://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" class="img-fluid" alt="Responsive image" style="width: 529px; height: 329px;">
-                                  <img src="https://www.spc.noaa.gov/products/outlook/day1probotlk_0100_torn.gif" class="img-fluid" alt="Responsive image" style="width: 529px; height: 329px;">
-                                  <img src="https://www.spc.noaa.gov/products/outlook/day1probotlk_0100_wind.gif" class="img-fluid" alt="Responsive image" style="width: 529px; height: 329px;">
-                                  <img src="https://www.spc.noaa.gov/products/outlook/day1probotlk_0100_hail.gif" class="img-fluid" alt="Responsive image" style="width: 529px; height: 329px;">
-                                </div>
+                            <br><hr>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="tabssle" style="margin-left: 350px;">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">  <iframe src="https://www.spc.noaa.gov/products/outlook/day1otlk_prt.html" style="width: 900px; height: 690px;">    </iframe></th>
+                                              <th scope="col"><iframe src="https://www.spc.noaa.gov/products/outlook/day2otlk_prt.html" style="width: 900px; height: 690px;"></th>
+                                            </tr>
+                                          </thead>
+                                    </table>
+
                             </div>
+                  
+                            
                         
 
                             <br>
