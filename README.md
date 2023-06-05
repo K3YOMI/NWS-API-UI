@@ -6,7 +6,7 @@
 <a href="https://discordapp.com/users/359794704847601674"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Kiyomi#9081" ></a>
 
 ## ❌ Description
-This web panel is designed to retrieve information from the "api.weather.gov" API, which provides weather *warnings/watched* for various locations. It offers a user-friendly interface that allows users to input their desired location and receive real-time weather information. There aren't that many features as of right now and **EXPECT** bugs. Also please don't criticize the UI Design. I know its absolute trash but this will be updated very shortly! This is just a mini-project and not all information may be accurate. (Requested from the *api.weather.gov* API)
+This web panel is designed to retrieve information from the "api.weather.gov" API, which provides weather *warnings/watched* for various locations. It offers a user-friendly interface There aren't that many features as of right now and **EXPECT** bugs. Also please don't criticize the UI Design. I know its absolute trash but this will be updated very shortly! This is just a mini-project and not all information may be accurate. (Requested from the *api.weather.gov* API)
 
 
 ## 🆕 Features
