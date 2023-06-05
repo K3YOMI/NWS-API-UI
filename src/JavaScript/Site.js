@@ -1,5 +1,5 @@
 let whitelisted_events = ['Flash Flood Watch', 'Severe Thunderstorm Watch', 'Tornado Watch','Special Marine Warning','Flash Flood Warning','Severe Thunderstorm Warning','Tornado Warning',]
-let global_header = {'User-Agent': 'AtmosphericX','Accept': 'application/geo+json','Accept-Language': 'en-US'}
+let global_header = {'User-Agent': 'MWS-API-UI','Accept': 'application/geo+json','Accept-Language': 'en-US'}
 let count_settings = {
     latest_string : '',
     latest_int : 0,
