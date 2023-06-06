@@ -251,7 +251,7 @@ function request_active_alerts() {
             let eventDesc = alerts[i].properties.description
             let tornadoThreat = alerts[i].properties.parameters.tornadoDetection
             let thunderstorm = alerts[i].properties.parameters.thunderstormDamageThreat
-            let eventLink = alerts[i].properties.id
+            let eventLink = alerts[i].id
             let eventHeadline = alerts[i].properties.headline
             let eventInstruction = alerts[i].properties.instruction
             let response = alerts[i].properties.response
