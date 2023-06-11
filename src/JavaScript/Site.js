@@ -256,12 +256,12 @@ function request_active_alerts() {
             let eventInstruction = alerts[i].properties.instruction
             let response = alerts[i].properties.response
             let windThreat = alerts[i].properties.parameters.windThreat
-            let windGust = alerts[i].properties.parameters.windGust
+            let windGust = alerts[i].properties.parameters.maxWindGust
             let hailThreat = alerts[i].properties.parameters.hailThreat
-            let hailSize = alerts[i].properties.parameters.hailSize
+            let hailSize = alerts[i].properties.parameters.maxHailSize
             let eventExpires = alerts[i].properties.expires
             let eventSender = alerts[i].properties.senderName
-
+    
             if (eventValid == false || eventExpire == false) { continue; }
             if (eventType.includes(`Watch`)) { count_settings.total_watches += 1;} 
             if (eventType.includes(`Warning`)) { count_settings.total_warnings += 1;} 
@@ -283,13 +283,14 @@ function request_active_alerts() {
             if (messageType == `Alert`) { messageType = `Issued`;}
             if (messageType == `Update`) { messageType = `Updated`;}
             if (messageType == `Cancel`) { messageType = `Expired`;}
-            if (windThreat == undefined) { windThreat = `N/A`;}
-            if (windGust == undefined) { windGust = `N/A`;}
-            if (hailThreat == undefined) { hailThreat = `N/A`;}
-            if (hailSize == undefined) { hailSize = `N/A`;}
-            if (tornadoThreat == undefined) { tornadoThreat = `N/A`;}
-            if (response == undefined) { response = `N/A`;}
-            if (thunderstorm == undefined) { thunderstorm = `N/A`;}
+            if (hailSize == undefined) { hailSize = `Not Calculated`;}
+            if (hailThreat == undefined) { hailThreat = `Not Calculated`;}
+            if (windGust == undefined) { windGust = `Not Calculated`;}
+            if (windThreat == undefined) { windThreat = `Not Calculated`;}
+            if (tornadoThreat == undefined) { tornadoThreat = `Not Calculated`;}
+            if (thunderstorm == undefined) { thunderstorm = `Not Calculated`;}
+
+          
             if (get_site_name() == 'ActiveAlerts.html') {
                 let alert_temp  = { event_type: what_is_it,event_desc: eventDesc,event_locations: eventLocations,event_sender: eventSender,event_link: eventLink,event_headline: eventHeadline,event_instruction: eventInstruction,event_response: response,event_thunderstorm: thunderstorm,event_tornado_threat: tornadoThreat,event_hail_size: hailSize,event_hail_threat: hailThreat,event_wind_gust: windGust,event_wind_threat: windThreat,event_expires: eventExpires,event_message_type: messageType,event_sent : alerts[i].properties.sent,}
                 import_alert(alert_temp)  
