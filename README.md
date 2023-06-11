@@ -1,9 +1,5 @@
 # NWS-API-UI (Panel) v1.0.0
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Inconsolata&duration=3000&color=D404F7&vCenter=true&height=25&lines=Have+questions%3F;Feel+free+to+DM+me+on+Discord!)](https://git.io/typing-svg)
-
-## Contact Information 
-<a href="mailto:chevybot123@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-<a href="https://discordapp.com/users/359794704847601674"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="kiyomi" ></a>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=1&duration=2000&pause=1000&color=F70000&width=435&lines=Have+Questions%3F;Feel+free+to+contact+me!)](https://git.io/typing-svg)
 
 ## ❌ Description
 This web panel is designed to retrieve information from the "api.weather.gov" API, which provides weather *warnings/watched* for various locations. It offers a user-friendly interface There aren't that many features as of right now and **EXPECT** bugs. Also please don't criticize the UI Design. I know its absolute trash but this will be updated very shortly! This is just a mini-project and not all information may be accurate. (Requested from the *api.weather.gov* API)
