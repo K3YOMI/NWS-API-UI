@@ -1,3 +1,4 @@
+let myLocation = "Susquehanna, PA"
 let whitelisted_events3 = ['Flash Flood Watch', 'Severe Thunderstorm Watch', 'Tornado Watch','Special Marine Warning','Flash Flood Warning','Severe Thunderstorm Warning','Tornado Warning',]
 let global_headers3 = {'User-Agent': 'MWS-API-UI','Accept': 'application/geo+json','Accept-Language': 'en-US'}
 let count_settings3 = {
@@ -20,6 +21,18 @@ let count_settings3 = {
         'Flash Flood Watches': 0,
     }
 }
+fileLocation = `../Audio/eas.mp3`
+audios = new Audio(fileLocation)
+playAllowed = true
+function playAudio () {
+    if (playAllowed == false) {return;}
+    playAllowed = false
+    console.log(`Playing Audio: ${fileLocation}`)
+    audios.volume = 0.5
+    audios.play()
+    setTimeout(() => {playAllowed = true}, 5000)
+}
+
 
 function decyph_event_1(event_table) {  
     let eventType = event_table.properties.event; 
@@ -129,9 +142,18 @@ function request_active_alerts_1() {
                 if (is_new_alert_1(lat_text) == true) {
                     if (messageType == `Alert`) { messageType = `Issued`;}
                     if (messageType == `Update`) { messageType = `Updated`;}
+                    if (messageType == `Cancel`) { messageType = `Expired/Cancelled`;}
+                    if (eventType == `Tornado Warning`) {if (tornadoThreat == undefined) {messageType = "Expired/Cancelled";}}
                     let what_is_event = decyph_event_1(alerts[i])
                     document.getElementById("latest_message").innerHTML = `${what_is_event} (${messageType})`
                     document.getElementById("latest_message_loco").innerHTML = `${format_locations_1(eventLocations)}`
+                    // check if its mylocation 
+                    if (format_locations_1(eventLocations).includes(myLocation)) {
+                        setTimeout(() => {
+                            alert(`Critical Information for ${myLocation} \n\n${what_is_event} (${messageType}) \n\n${eventDesc}`)
+                        }, 1000)
+                        playAudio()
+                    }
                 }
             }
         }

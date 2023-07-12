@@ -1,3 +1,6 @@
+
+
+
 let whitelisted_events = ['Flash Flood Watch', 'Severe Thunderstorm Watch', 'Tornado Watch','Special Marine Warning','Flash Flood Warning','Severe Thunderstorm Warning','Tornado Warning',]
 let global_header = {'User-Agent': 'MWS-API-UI','Accept': 'application/geo+json','Accept-Language': 'en-US'}
 let count_settings = {
@@ -189,6 +192,11 @@ function showWidget(data) {
                 if (data[x].event_locations.length > 25) {  
                     data[x].event_locations = data[x].event_locations.substring(0, 25) + "..."; 
                 }   
+                if (data[x].event_type == `Tornado Warning`) {
+                    if (data[x].event_tornado_threat == `Not Calculated`) { 
+                        data[x].event_message_type = `Cancelled/Expired`;
+                    }
+                }
                 let new_desc = remove_bad_literals(data[x].event_desc); 
                 document.getElementById("active_alerts_state").innerHTML += ` 
                 <tr>
@@ -201,7 +209,7 @@ function showWidget(data) {
                 <td>${data[x].event_message_type}</td> 
                 <td>${data[x].event_expires}</td> 
                 <td><a onclick='alert("${new_desc}")' class="btn btn-primary btn-sm" role="button" aria-pressed="true">View</a></td> 
-                <td><a href=${data[x].event_link} class="btn btn-primary btn-sm" role="button" aria-pressed="true">View</a></td></tr> `;   
+                <td><a href=${data[x].event_link} class="btn btn-primary btn-sm" role="button" aria-pressed="true">View</a></td></tr> `;  
             } 
         } 
     } 
@@ -216,7 +224,7 @@ function widget_close() {
     document.getElementById("widget").style.display = "none";
 }
 function update_listings() {
-    try {  
+
         document.getElementById("active_alerts").innerHTML = ""; 
         for (let i = 0; i < state_conversion.length; i++) { 
             let table_state = state_conversion[i].name; 
@@ -229,9 +237,6 @@ function update_listings() {
                 <td>${state_conversion[i].alerts[0].event_sent}</td>
                 <td><a onclick="showWidget('${table_state}')" class="btn btn-primary btn-sm" role="button" aria-pressed="true">View</a></td></tr>`; 
         } 
-    } catch (error) { 
-        console.log(`I am too lazy to fix errors that do happen right now. Please report them if you see them on the Github Repository \n\n${error}`); 
-    } 
 }
 function request_active_alerts() {
     fetch(`https://api.weather.gov/alerts/active`, {headers: global_header}).then(response => response.text()).then(data => {
