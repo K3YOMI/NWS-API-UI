@@ -10,7 +10,7 @@ This web panel is designed to retrieve information from the "api.weather.gov" AP
 - The web panel is designed to be responsive, ensuring an optimal viewing experience across different devices, including desktops, tablets, and mobile phones. (*Report bugs if needed*)
 - Latest Alerts (Retrieve the most-up-to-date alert that was recently sent out by the National Weather Service)
 - Looks through the current active alerts (By State) and retrieve information about that *Warning/Watch*
-- NOAA Outlook (Day 1 - 2 )
+- SPC Outlook ( Day 1 - 2 )
 - Raw Data Button (*Located in the "Active Alerts" Tab*) Will redirect you to the *RAW* API data.
 - NodeJS Hosting Backend (Easily access the webpage from anywhere on your network!)
 
