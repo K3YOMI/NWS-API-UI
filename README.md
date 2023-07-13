@@ -35,9 +35,9 @@ This web panel is designed to retrieve information from the "api.weather.gov" AP
 
 ## 🔨 Languages Used
 ![HTML](https://custom-icon-badges.herokuapp.com/badge/HTML-black.svg?logo=html5&logoColor=blue)
-![CSS](https://custom-icon-badges.herokuapp.com/badge/CSS-black.svg?logo=CSS3&logoColor=blue)
-![JavaScript](https://custom-icon-badges.herokuapp.com/badge/Javascript-black.svg?logo=Javascript&logoColor=blue)
-![NodeJS](https://custom-icon-badges.herokuapp.com/badge/NodeJS-black.svg?logo=NodeJS&logoColor=blue)
+![CSS](https://custom-icon-badges.herokuapp.com/badge/CSS-black.svg?logo=CSS3&logoColor=orange)
+![JavaScript](https://custom-icon-badges.herokuapp.com/badge/Javascript-black.svg?logo=Javascript&logoColor=yellow)
+![NodeJS](https://custom-icon-badges.herokuapp.com/badge/NodeJS-black.svg?logo=NodeJS&logoColor=green)
 
 
 ## 📷 Demo
